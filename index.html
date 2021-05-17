@@ -1,63 +1,12 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Assignment 4</title>
-  </head>
-  <style>
-  body {margin: 0;}
-  canvas {width: 100%; height: 100%;}
-  </style>
-  <body>
-    <!--include the three.js library-->
-    <script src="js/three.js"> </script>
-xccasdadadasd
-    <style>
-    			body {
-    				font-family: Monospace;
-    				background-color: #000;
-    				color: #fff;
-    				margin: 0px;
-    				overflow: hidden;
-    			}
-    			#info {
-    				position: absolute;
-    				top: 10px;
-    				width: 100%;
-    				text-align: center;
-    			}
-    </style>
-
-    <div id="info">
-      <p></p>
-    </div>
-    <script>
-
-    //create the scene
-    var scene = new THREE.Scene( );
-    var ratio = window.innerWidth/window.innerHeight;
-    //create the perspective camera
-    //for parameters see https://threejs.org/docs/#api/cameras/PerspectiveCamera
-    var camera = new THREE.PerspectiveCamera(45,ratio,0.1,1000);
-
-    //set the camera position
-    camera.position.set(0,0,15);
-    // and the direction
-	  camera.lookAt(0,0,1);
-
-    //create the webgl renderer
-    var renderer = new THREE.WebGLRenderer( );
-
-    //set the size of the rendering window
-    renderer.setSize(window.innerWidth,window.innerHeight);
-
-    //add the renderer to the current document
-    document.body.appendChild(renderer.domElement );
-
-    //and add to the scene
-    scene.add(cube);
-    scene.add(tetra);
-
-    renderer.render(scene,camera);
-
-    </script>
-  </body>
+<head>
+  <title>Three.JS Tutorial: Third Person Camera</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+  <script src="js/main.js" type="module">
+  </script>
+</body>
 </html>
