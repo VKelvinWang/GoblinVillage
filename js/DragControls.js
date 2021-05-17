@@ -12,8 +12,6 @@ THREE.DragControls = function ( _objects, _camera, _domElement ) {
 
 	var _selected = null, _hovered = null;
 
-	//
-
 	var scope = this;
 
 	function activate() {
